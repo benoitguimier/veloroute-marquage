@@ -1,0 +1,846 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: black;
+    background-color: #fffcf5;
+    margin-top: 4em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#texteintroligne2 p,
+#texteintroligne3 p,
+#textesousformeligne4 p,
+#textesignesdeplacement p {
+    font-size: 1.2em;
+}
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* //////////////////////// FONTS /////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+
+
+@font-face {
+    font-family: 'Mediasans-semicondensed-italic';
+    src: url("../fonts/mediasanssemicondensed-italic.otf");
+}
+
+@font-face {
+    font-family: 'Mediasans-semicondensed-light';
+    src: url("../fonts/mediasanssemicondensed-light.otf");
+}
+
+@font-face {
+    font-family: 'Mediasans-semicondensed-bold';
+    src: url("../fonts/mediasanssemicondensed-bold.otf");
+}
+
+@font-face {
+    font-family: 'Mediasans-extracondensed-blackitalic';
+    src: url("../fonts/mediasansextracondensed-blackitalic.otf");
+}
+
+@font-face {
+    font-family: 'Mediasans-condensed-bolditalic';
+    src: url("../fonts/mediasanscondensed-bolditalic.otf");
+}
+
+@font-face {
+    font-family: 'Mediasans-condensed-regular';
+    src: url("../fonts/mediasanscondensed-regular.otf");
+}
+
+@font-face {
+    font-family: 'Mediasans-regular';
+    src: url("../fonts/mediasans-regular-TRIAL.otf");
+}
+
+
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* /////////////////////// HEADER /////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: #fffcf5;
+    z-index: 1000;
+    width: 100%;
+}
+
+h1,
+h2,
+#forme_01 {
+    text-align: center;
+    display: inline;
+    float: left;
+    position: relative;
+    margin: 0;
+    border: 1.5px solid;
+    border-bottom: 3px solid;
+    border-top: 3px solid;
+    font-weight: 100;
+    height: 70px;
+}
+
+h1,
+h2 {
+    letter-spacing: 0.02em;
+    font-size: 3em;
+    padding: 0.1em;
+}
+
+h1 {
+    font-family: 'Mediasans-semicondensed-bold';
+    width: 23.5%;
+    border-left: 3px solid;
+}
+
+h2 {
+    font-family: 'Mediasans-semicondensed-light';
+    width: 50%;
+}
+
+.mediasans-semicondensed-light {
+    font-family: 'Mediasans-semicondensed-light';
+}
+
+#forme_01 {
+    width: 26.5%;
+    border-right: 3px solid;
+}
+
+#forme_01 svg {
+    height: 100%;
+}
+
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* /////////////////////// FLECHE /////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+#fleche {
+    width: 60px;
+    z-index: 900;
+    position: absolute;
+    bottom: 1em;
+    text-align: center;
+}
+
+#fleche:hover {
+    bottom: 0.5em;
+}
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ///////////////////////// VR ///////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+#changementcouleur {
+    position: absolute;
+    padding: 20px;
+    bottom: 0px;
+}
+
+#changementcouleur p {
+    font-family: 'Mediasans-extracondensed-blackitalic';
+    font-size: 3em;
+}
+
+#changementcouleur p:hover {
+    font-size: 4em;
+    cursor: pointer;
+    line-height: 0.8em;
+}
+
+p#bleu,
+p#bleu2 {
+    color: blue;
+}
+
+p#rouge,
+p#rouge2 {
+    color: red;
+}
+
+p#vert,
+p#vert2 {
+    color: green;
+}
+
+/* TEST */
+#vr01,
+#vr02,
+#vr03 {
+    height: 5em;
+}
+
+#vr01 p:hover,
+#vr02 p:hover,
+#vr03 p:hover {}
+
+p#bleu2,
+p#rouge2,
+p#vert2 {
+    display: none;
+    font-size: 4em;
+    line-height: 0.8em;
+}
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* /////////////////////// CARTES /////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+#carte {}
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* /////////////////////// INTRO. /////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+/* GÉNÉRAL INTRO */
+#forme_02,
+#lacarte,
+#texteintroligne2,
+#contribuer,
+#formeligne3,
+#texteintroligne3,
+#systemedepeinture,
+#formeligne4,
+#ligne5formegauche,
+#textesousformeligne4,
+#ligne5formedroite {
+    text-align: center;
+    display: inline;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1.5px solid;
+}
+
+#texteintroligne2,
+#texteintroligne3 {
+    text-align: left;
+    padding: 1.5em;
+    padding-top: 3em;
+}
+
+
+
+/* /////// */
+/* LIGNE 1 */
+/* /////// */
+
+#forme_02 {
+    border-top: 3px solid;
+    border-right: 3px solid;
+    border-left: 3px solid;
+    width: 100%;
+    height: 10em;
+}
+
+/* /////// */
+/* LIGNE 2 */
+/* /////// */
+
+#lacarte,
+#texteintroligne2,
+#contribuer {
+    height: 14em;
+}
+
+#lacarte p,
+#contribuer p {
+    font-size: 12.5em;
+    line-height: 1em;
+}
+
+/* Somme des width = 100 % */
+
+#lacarte {
+    width: 21.5%;
+}
+
+#texteintroligne2 {
+    width: 36.5%;
+}
+
+#contribuer {
+    width: 42%;
+}
+
+/* */
+
+#lacarte {
+    font-family: 'Mediasans-extracondensed-blackitalic';
+    border-left: 3px solid;
+}
+
+#lacarte:hover {
+    background-color: black;
+}
+
+#lacarte:hover p {
+    color: #fffcf5;
+}
+
+#texteintroligne2 {
+    border-right: 0;
+}
+
+#contribuer {
+    overflow: hidden;
+    border-left: 0;
+    text-align: right;
+    font-family: 'Mediasans-extracondensed-blackitalic';
+    border-right: 3px solid;
+}
+
+#contribuer svg {
+    height: 100%;
+    left: 0;
+}
+
+#contribuer p {
+    color: #fffcf5;
+    position: absolute;
+    right: 0.3em;
+}
+
+#contribuer:hover p {
+    font-family: 'Mediasans-condensed-regular';
+    right: 0.4em;
+    color: black;
+}
+
+#contribuer:hover {
+    fill: #fffcf5;
+    background-color: black;
+}
+
+
+/* /////// */
+/* LIGNE 3 */
+/* /////// */
+
+#formeligne3,
+#texteintroligne3,
+#systemedepeinture {
+    height: 14em;
+}
+
+/* Somme des width = 100 % */
+
+#formeligne3 {
+    width: 7%;
+}
+
+
+#texteintroligne3 {
+    width: 36.5%;
+}
+
+#systemedepeinture {
+    width: 56.5%;
+}
+
+/* */
+
+#formeligne3 {
+    border-left: 3px solid;
+    background: black;
+}
+
+#formeligne3 svg {
+    fill: #fffcf5;
+}
+
+#formeligne3:hover {
+    background-color: #fffcf5;
+}
+
+#formeligne3:hover svg {
+    fill: black;
+}
+
+#systemedepeinture p {
+    font-family: 'Mediasans-extracondensed-blackitalic';
+    font-size: 12.5em;
+    line-height: 1em;
+}
+
+#systemedepeinture:hover p {
+    color: #fffcf5;
+}
+
+#systemedepeinture:hover {
+    background-color: black;
+}
+
+/* /////// */
+/* LIGNE 4 */
+/* /////// */
+
+#formeligne4 {
+    width: 100%;
+    height: 32em;
+    border-left: 3px solid;
+    border-right: 3px solid;
+}
+
+/* /////// */
+/* LIGNE 5 */
+/* /////// */
+
+
+#ligne5formegauche,
+#textesousformeligne4,
+#ligne5formedroite {
+    height: 32em;
+    background-color: black;
+}
+
+#ligne5formegauche,
+#ligne5formedroite {
+    width: 25%;
+}
+
+#ligne5formegauche .cls-1,
+#ligne5formedroite .cls-1 {
+    fill: #fffcf5;
+}
+
+#ligne5formegauche {
+    border-left: 3px solid;
+    border-right: 0px;
+}
+
+#ligne5formedroite {
+    border-right: 3px solid;
+    border-left: 0px;
+}
+
+#textesousformeligne4 {
+    width: 50%;
+    padding: 3em;
+    padding-left: 5em;
+    padding-right: 5em;
+    text-align: inherit;
+}
+
+#textesousformeligne4 p {
+    color: #fffcf5;
+}
+
+/* */
+
+#ligne5 {
+    display: none;
+}
+
+#effetapparitionligne4et5:hover #ligne5 {
+    display: block;
+}
+
+#effetapparitionligne4et5:hover #formeligne4 {
+    display: none;
+}
+
+/* */
+
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* /////////////////////// FORMES /////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+#ligne_haut1,
+#ligne_bas1,
+#ligne_gauche1,
+#ligne_droite1,
+#ligne_haut2,
+#ligne_bas2,
+#ligne_gauche2,
+#ligne_droite2,
+#ligne_haut3,
+#ligne_bas3,
+#ligne_gauche3,
+#ligne_droite3,
+#ligne_haut4,
+#ligne_bas4,
+#ligne_gauche4,
+#ligne_droite4,
+#ligne_haut5,
+#ligne_bas5,
+#ligne_gauche5,
+#ligne_droite5,
+#ligne_haut6,
+#ligne_bas6,
+#ligne_gauche6,
+#ligne_droite6,
+#ligne_haut7,
+#ligne_bas7,
+#ligne_gauche7,
+#ligne_droite7,
+#ligne_haut8,
+#ligne_bas8,
+#ligne_gauche8,
+#ligne_droite8,
+#ligne_haut9,
+#ligne_bas9,
+#ligne_gauche9,
+#ligne_droite9,
+#ligne_haut10,
+#ligne_bas10,
+#ligne_gauche10,
+#ligne_droite10,
+#ligne_haut11,
+#ligne_bas11,
+#ligne_gauche11,
+#ligne_droite11,
+#ligne_haut12,
+#ligne_bas12,
+#ligne_gauche12,
+#ligne_droite12,
+#ligne_haut13,
+#ligne_bas13,
+#ligne_gauche13,
+#ligne_droite13 {
+    position: absolute;
+    display: none;
+    border: 1px solid;
+    z-index: 900;
+}
+
+#ligne_haut1,
+#ligne_bas1,
+#ligne_haut2,
+#ligne_bas2,
+#ligne_haut3,
+#ligne_bas3,
+#ligne_haut4,
+#ligne_bas4,
+#ligne_haut5,
+#ligne_bas5,
+#ligne_haut6,
+#ligne_bas6,
+#ligne_haut7,
+#ligne_bas7,
+#ligne_haut8,
+#ligne_bas8,
+#ligne_haut9,
+#ligne_bas9,
+#ligne_haut10,
+#ligne_bas10,
+#ligne_haut11,
+#ligne_bas11,
+#ligne_haut12,
+#ligne_bas12,
+#ligne_haut13,
+#ligne_bas13 {
+    width: 100%;
+    height: 1px;
+}
+
+#ligne_gauche1,
+#ligne_droite1,
+#ligne_gauche2,
+#ligne_droite2,
+#ligne_gauche3,
+#ligne_droite3,
+#ligne_gauche4,
+#ligne_droite4,
+#ligne_gauche5,
+#ligne_droite5,
+#ligne_gauche6,
+#ligne_droite6,
+#ligne_gauche7,
+#ligne_droite7,
+#ligne_gauche8,
+#ligne_droite8,
+#ligne_gauche9,
+#ligne_droite9,
+#ligne_gauche10,
+#ligne_droite10,
+#ligne_gauche11,
+#ligne_droite11,
+#ligne_gauche12,
+#ligne_droite12,
+#ligne_gauche13,
+#ligne_droite13 {
+    height: 100%;
+    width: 1px;
+}
+
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+
+#lessignesdedeplacement,
+#textesignesdeplacement,
+#formeintrosignedeplacement {
+    text-align: center;
+    display: inline;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1.5px solid;
+    height: 7em;
+}
+
+#lessignesdedeplacement {
+    width: 27%;
+    border-left: 3px solid;
+}
+
+#textesignesdeplacement {
+    width: 48%;
+}
+
+#formeintrosignedeplacement {
+    width: 25%;
+    border-right: 3px solid;
+}
+
+#lessignesdedeplacement p {
+    font-family: 'Mediasans-extracondensed-blackitalic';
+    font-size: 6em;
+    line-height: 1em;
+}
+
+#textesignesdeplacement p {
+    padding: 0.8em;
+    padding-top: 1.5em;
+    text-align: left;
+}
+
+/* ////////////////////////////////////////////////////// */
+
+#container,
+#container2,
+#container3,
+#container4,
+#container5,
+#container6,
+#container7,
+#container8,
+#container9,
+#container10,
+#container11,
+#container12,
+#container13 {
+    box-sizing: border-box;
+    width: 1000px;
+    height: 400px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#forme,
+#forme2,
+#forme3,
+#forme4,
+#forme5,
+#forme6,
+#forme7,
+#forme8,
+#forme9,
+#forme10,
+#forme11,
+#forme12,
+#forme13 {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    max-width: 1500px;
+    min-width: 200px;
+    max-height: 393px;
+    min-height: 50px;
+    height: 205px;
+    width: 390px;
+}
+
+.bloctextwidth {
+    width: 25%;
+}
+
+.blocformewidth,
+.blocformewidthblanc {
+    width: 75%;
+}
+
+.bloctextwidth,
+.blocformewidth,
+.blocformewidthblanc {
+    border: 1.5px solid;
+    display: inline;
+    height: 400px;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.texteforme {
+    padding: 15px;
+    font-family: 'Mediasans-regular';
+    font-size: 3em;
+    letter-spacing: 0.02em;
+}
+
+.texteexplicationforme {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #fffcf5;
+    display: none;
+}
+
+.boutonpdf {
+    text-align: center;
+    display: inline;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    margin: 15px;
+    height: 2em;
+    width: 1.5em;
+}
+
+.bloctextwidth:hover {
+    background-color: black;
+}
+
+.bloctextwidth:hover .boutonpdf .cls-1,
+.bloctextwidth:hover p {
+    fill: #fffcf5;
+    color: #fffcf5;
+    display: block;
+}
+
+/* ////////////////////////////////////////////////////// */
+
+.couleurblanc {
+    fill: #fffcf5;
+    /* stroke: black;
+    stroke-width: 1; */
+}
+
+
+.blocformewidthblanc svg {
+    background-color: #fffcf5;
+    background-image: radial-gradient(circle, black 20%, transparent 10%), radial-gradient(circle, black 20%, transparent 10%);
+    background-size: 10px 10px;
+    background-position: 0 0, 5px 5px;
+}
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* //////////////////// MEDIA QUERIES /////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 1280px) {
+
+    #texteintroligne2 p,
+    #texteintroligne3 p,
+    #textesousformeligne4 p,
+    #textesignesdeplacement p {
+        font-size: 1.1em;
+    }
+
+    h1,
+    h2,
+    #forme_01 {
+        height: 58px;
+    }
+
+    #lacarte,
+    #texteintroligne2,
+    #contribuer,
+    #formeligne3,
+    #texteintroligne3,
+    #systemedepeinture {
+        height: 11em;
+    }
+
+    #lessignesdedeplacement,
+    #textesignesdeplacement,
+    #formeintrosignedeplacement {
+        height: 5.55em;
+    }
+
+    #fleche {
+        width: 45px;
+    }
+
+    #formeligne4,
+    #ligne5formegauche,
+    #textesousformeligne4,
+    #ligne5formedroite {
+        height: 35.5em;
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    body {
+        background-color: yellow;
+    }
+
+    h1,
+    h2 {
+        letter-spacing: 0.02em;
+        padding: 0.1em;
+        height: 4em;
+    }
+
+    h1 {
+        width: 50%;
+    }
+
+    h2 {
+        width: 60%:
+    }
+
+
+}
